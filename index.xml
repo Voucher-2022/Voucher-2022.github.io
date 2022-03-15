@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Website of Voucher</title>
-    <link>https://github.com/Voucher-2022/Voucher-2022.github.io/</link>
+    <link>https://voucher-2022.github.io/</link>
     <description>Recent content on Website of Voucher</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Mar 2022 19:28:18 +0800</lastBuildDate><atom:link href="https://github.com/Voucher-2022/Voucher-2022.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 19:28:18 +0800</lastBuildDate><atom:link href="https://voucher-2022.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>https://github.com/Voucher-2022/Voucher-2022.github.io/post/first/</link>
+      <link>https://voucher-2022.github.io/post/first/</link>
       <pubDate>Thu, 03 Mar 2022 19:28:18 +0800</pubDate>
       
-      <guid>https://github.com/Voucher-2022/Voucher-2022.github.io/post/first/</guid>
+      <guid>https://voucher-2022.github.io/post/first/</guid>
       
         <description>用于测试
 f(x) = y

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    
+      
+        遗传算法求一元函数最大值 |
+
+      
+      Voucher
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.94.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      	Call me Voucher, 
+	a freshman to 
+	build my blog
+	
+
+
+    "
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.887981ea8ee463aed275e813b62ca5ceba5547658ae54bc026235d498d7503d6.css"
+      integrity="sha256-iHmB6o7kY67SdegTtiylzrpVR2WK5UvAJiNdSY11A9Y="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.3eab8ef80d1761270f30323d1bd5d9d10a8f6a7610dbe233adba89094ed48fbd.css"
+    integrity="sha256-PquO&#43;A0XYScPMDI9G9XZ0QqPanYQ2&#43;IzrbqJCU7Uj70="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.6ee9fbc38b1b14c99d05fdc597d9af749968eaf84e43050a6d059cad81a60bcc.css"
+    integrity="sha256-bun7w4sbFMmdBf3Fl9mvdJlo6vhOQwUKbQWcrYGmC8w="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.4bfdb43d33551d871070eb4a2ad6fd6e0d1910839cd73d763698f1db19049ddc.css"
+    integrity="sha256-S/20PTNVHYcQcOtKKtb9bg0ZEIOc1z12Npjx2xkEndw="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://voucher-2022.github.io/post/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E6%B1%82%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E6%9C%80%E5%A4%A7%E5%80%BC/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.560a26330d27ff44a44e83b53cd07a95d4230a65930d31c5c76a8d481e5b35bf.js"
+      integrity="sha256-VgomMw0n/0SkToO1PNB6ldQjCmWTDTHFx2qNSB5bNb8="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://voucher-2022.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="遗传算法求一元函数最大值"/>
+<meta name="twitter:description" content="例：求一元函数的最大值 其中 &#34;&#34;&#34; Created on Tue Jun 03 16:22:15 2021 @author: Overcoming` &#34;&#34;&#34; &#39;&#39;&#39;求一元函数的最大值 f(x) = xsin(10pi*x )&#43;2."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "遗传算法求一元函数最大值",
+        "headline": "遗传算法求一元函数最大值",
+        "alternativeHeadline": "",
+        "description": "
+      
+        例：求一元函数的最大值 其中 \u0026#34;\u0026#34;\u0026#34; Created on Tue Jun 03 16:22:15 2021 @author: Overcoming` \u0026#34;\u0026#34;\u0026#34; \u0026#39;\u0026#39;\u0026#39;求一元函数的最大值 f(x) = xsin(10pi*x )\u002b2.
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/voucher-2022.github.io\/post\/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E6%B1%82%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E6%9C%80%E5%A4%A7%E5%80%BC\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Voucher"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Voucher"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Voucher"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Voucher"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-03-17T08:46:18.00Z",
+        "datePublished": "2022-03-17T08:46:18.00Z",
+        "dateModified": "2022-03-17T08:46:18.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Voucher",
+            "url": "https://voucher-2022.github.io",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/voucher-2022.github.io\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://voucher-2022.github.io/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/voucher-2022.github.io\/post\/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E6%B1%82%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E6%9C%80%E5%A4%A7%E5%80%BC\/",
+        "wordCount" : "491",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+    <div class="wrapper">
+      <aside class="wrapper__sidebar"><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/2.jpg"
+        alt="profile picture"
+      />
+      <h1 class="sidebar__introduction-title">
+        <a href="/">I&#39;m Voucher</a>
+      </h1>
+      <div class="sidebar__introduction-description">
+        <p>	Call me Voucher, <br />	a freshman to <br />	build my blog<br />	</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a href="https://github.com/Voucher-2022" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="1084979203@qq.com" rel="me" aria-label="e-mail" title="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Voucher
+        2022
+
+
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.a3fd0638ada4e3cec287e49a604b4a828cfef33a669afe60b96575761fff5cf3.js"
+    integrity="sha256-o/0GOK2k487Ch&#43;SaYEtKgoz&#43;8zpmmv5guWV1dh//XPM="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main class="wrapper__main">
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/"
+            
+            title=""
+            >Home</a
+          >
+        </li>
+
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/post/"
+            
+            title=""
+            >Posts</a
+          >
+        </li>
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>遗传算法求一元函数最大值</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                17/3/2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">3-minute read</span>
+          </li>
+        </ul>
+
+      <p>例：求一元函数的最大值 <img src="https://latex.codecogs.com/gif.latex?f%28x%29%20%3D%20xsin%2810%5Cpi%20*x%29+2.0" alt="f(x) = xsin(10\pi *x)+2.0"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"> 其中 <img src="https://latex.codecogs.com/gif.latex?x%5Cepsilon%20%5B-1%2C2%5D" alt="x\epsilon [-1,2]"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210624162551665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcwMTUwMw==,size_16,color_FFFFFF,t_70" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">Created on Tue Jun 03 16:22:15 2021
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">@author: Overcoming`
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;求一元函数的最大值
+</span></span></span><span class="line"><span class="cl"><span class="s1">f(x) = xsin(10pi*x )+2.0 x in[-1,2]
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#没写精英解保持容易陷入局部最优？ 和种群数量有关系</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="mi">200</span>
+</span></span><span class="line"><span class="cl"><span class="n">Pcross</span> <span class="o">=</span> <span class="mf">0.75</span>
+</span></span><span class="line"><span class="cl"><span class="n">Pchange</span> <span class="o">=</span> <span class="mf">0.05</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">ori</span> <span class="p">(</span><span class="n">N</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#产生初始种群</span>
+</span></span><span class="line"><span class="cl">    <span class="n">X</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">JY1</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#JY2 = []</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">N</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">**</span><span class="mi">22</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;&#39;&#39;JY.append( bin(x)) #二进制编码
+</span></span></span><span class="line"><span class="cl"><span class="s1">        JY[i] = JY[i][2:]  #去除前面两个字符0b &#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">#上面产生的二进制数不是22位的。</span>
+</span></span><span class="line"><span class="cl">        <span class="n">JY1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;#022b&#39;</span><span class="p">))</span> <span class="c1">#22位二进制编码</span>
+</span></span><span class="line"><span class="cl">        <span class="n">JY1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">JY1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">:]</span> <span class="c1">#去除前面两个字符0b</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">#jy2 = [x&gt;&gt;d&amp;1 for d in range(22)][::-1] #22位数以列表存储</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">#JY2.append(jy2)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">22</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="c1">#原始坐标上对应的x取值</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">X</span><span class="p">,</span><span class="n">JY1</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">Y_v</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#计算个体适应度 </span>
+</span></span><span class="line"><span class="cl">    <span class="n">Y</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">pi</span> <span class="o">*</span> <span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="mf">2.0</span> <span class="c1">#适应度</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Y</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">cross</span><span class="p">(</span><span class="n">JY1</span><span class="p">,</span><span class="n">X</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#单点交叉产生下一代 </span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">JY1</span><span class="p">)</span><span class="o">&lt;</span> <span class="mi">2</span><span class="o">*</span><span class="n">N</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">p</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># 随机产生概率</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">p</span> <span class="o">&lt;=</span> <span class="n">Pcross</span><span class="p">:</span>  <span class="c1">#75%概率交叉</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">j</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">k</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">22</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">a</span> <span class="o">=</span> <span class="n">JY1</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="n">JY1</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">k</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#二进制转为十进制</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">22</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">JY1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">b</span> <span class="o">=</span> <span class="n">JY1</span><span class="p">[</span><span class="n">j</span><span class="p">][:</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="n">JY1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#二进制转为十进制</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">22</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">JY1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">a</span> <span class="o">=</span> <span class="n">JY1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#二进制转为十进制</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">22</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">JY1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">X</span><span class="p">,</span><span class="n">JY1</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">cg</span> <span class="p">(</span><span class="n">JY1</span><span class="p">,</span><span class="n">X</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">#突变   </span>
+</span></span><span class="line"><span class="cl">    <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">JY1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#随机产生概率</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">p</span> <span class="o">&lt;=</span> <span class="n">Pchange</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mf">1.0</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="mi">22</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)))</span> <span class="c1">#将实际x值映射到编码前十进制数</span>
+</span></span><span class="line"><span class="cl">        <span class="n">JY2</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">&gt;&gt;</span><span class="n">d</span><span class="o">&amp;</span><span class="mi">1</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">22</span><span class="p">)][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#22位数以列表存储</span>
+</span></span><span class="line"><span class="cl">        <span class="n">JY2</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">JY2</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span> <span class="c1">#该点突变</span>
+</span></span><span class="line"><span class="cl">        <span class="n">jy2</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">JY2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">JY1</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">jy2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">JY1</span><span class="p">[</span><span class="n">k</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">22</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="c1">#算出对应值。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">X</span><span class="p">,</span><span class="n">JY1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">P</span> <span class="p">(</span><span class="n">Y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 计算个体被挑选概率</span>
+</span></span><span class="line"><span class="cl">    <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PS</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PC</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ps</span> <span class="o">=</span> <span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="nb">sum</span><span class="p">(</span><span class="n">Y</span><span class="p">))</span>  <span class="c1"># 被选取概率`</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ps</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pc</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">PS</span><span class="p">[:</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="n">ps</span> <span class="c1">#累计概率</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">PS</span><span class="p">,</span><span class="n">PC</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">sel</span> <span class="p">(</span><span class="n">PC</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#轮盘赌挑选新个体</span>
+</span></span><span class="line"><span class="cl">    <span class="n">l</span> <span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">k</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">PC</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">PC</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&gt;=</span> <span class="n">i</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span>  <span class="c1">#没加break要命。。。</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">l</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">diedai</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">JY1</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">T</span> <span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Y_m</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Y_av</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">X_m</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">m</span> <span class="o">&lt;</span><span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">m</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">JY1</span><span class="p">]</span> <span class="o">=</span> <span class="n">cross</span><span class="p">(</span><span class="n">JY1</span><span class="p">,</span><span class="n">X</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">JY1</span><span class="p">]</span> <span class="o">=</span> <span class="n">cg</span><span class="p">(</span><span class="n">JY1</span><span class="p">,</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Y</span><span class="o">=</span><span class="n">Y_v</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="n">PS</span><span class="p">,</span><span class="n">PC</span><span class="p">]</span> <span class="o">=</span> <span class="n">P</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">index_N</span> <span class="o">=</span> <span class="n">sel</span><span class="p">(</span><span class="n">PC</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">#print(len(index_N))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">index_N</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">JY1</span><span class="o">=</span> <span class="p">[</span><span class="n">JY1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">index_N</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Y</span><span class="o">=</span><span class="n">Y_v</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">T</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">max_index</span> <span class="o">=</span> <span class="n">Y</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Xm</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X_m</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Xm</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Ym</span> <span class="o">=</span> <span class="n">Y</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Y_m</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Ym</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Yav</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Y_av</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Yav</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;第</span><span class="si">%d</span><span class="s1">代&#39;</span><span class="o">%</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">X</span><span class="p">,</span><span class="n">JY1</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Y_m</span><span class="p">,</span><span class="n">X_m</span><span class="p">,</span><span class="n">Y_av</span><span class="p">,</span><span class="n">T</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">JY1</span><span class="p">]</span> <span class="o">=</span> <span class="n">ori</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">JY1</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Y_m</span><span class="p">,</span><span class="n">X_m</span><span class="p">,</span><span class="n">Y_av</span><span class="p">,</span><span class="n">T</span><span class="p">]</span><span class="o">=</span><span class="n">diedai</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">JY1</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#print(&#39;PS= &#39;+ str(PS)+&#39;\n&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#print(&#39;PC=&#39;+ str(PC) + &#39;\n&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_index</span> <span class="o">=</span> <span class="n">Y</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">JY1m</span> <span class="o">=</span> <span class="n">JY1</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Xm</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Ym</span> <span class="o">=</span> <span class="n">Y</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最佳个体：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;JY1m = &#39;</span><span class="o">+</span> <span class="n">JY1m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Xm = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Xm</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ym = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Ym</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>  <span class="c1">#ax在这里定义。</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">Y_m</span><span class="p">,</span><span class="n">T</span><span class="p">,</span><span class="n">Y_av</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;The change with the ages&#39;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;Y_m&#39;</span><span class="p">,</span><span class="s1">&#39;Y_av&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mf">2.8</span><span class="p">,</span> <span class="s2">&#34;The final Y is &#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">Ym</span><span class="p">),</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#plt.show()</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">X_m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="s1">&#39;X_m&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s2">&#34;The final X is &#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">Xm</span><span class="p">),</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#上面text 用的是绝对位置</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div><p>附上其中一次运行结果</p>
+<p><img src="https://img-blog.csdnimg.cn/20210624163218426.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p><img src="https://img-blog.csdnimg.cn/2021062416323640.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcwMTUwMw==,size_16,color_FFFFFF,t_70" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Voucher
+        2022
+
+
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.a3fd0638ada4e3cec287e49a604b4a828cfef33a669afe60b96575761fff5cf3.js"
+    integrity="sha256-o/0GOK2k487Ch&#43;SaYEtKgoz&#43;8zpmmv5guWV1dh//XPM="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
